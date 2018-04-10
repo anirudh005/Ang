@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { emit } from 'cluster';
 
 @Component({
   selector: 'app-user',
@@ -8,11 +9,23 @@ import { Component, OnInit } from '@angular/core';
 export class UserComponent implements OnInit {
 
   name:string;
+  passcode:string;
+  messageText:string;
   constructor() { 
     this.name="owsaldo"
   }
 
   ngOnInit() {
   }
+  onClickMe() {  
+    if(this.passcode && this.name)
+    {   
+        alert("gg");
+    }
+    else
+    {
+      alert("lulz")
+    }
+}  
 
 }

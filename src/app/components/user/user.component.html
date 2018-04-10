@@ -1,5 +1,57 @@
-<p> Hi {{name}}</p>
-<br>
-<label for="name">Enter your name</label>
-<input type="text" [(ngModel)]="name">
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1>Welcome Noobs</h1>
+        <p>Register or login nubs</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Column 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-6">
+                <h3>Column 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="name">Enter Your Name</label>
+                    <input type="text" name="name" [(ngModel)]="name">
+                </div>
+                <div class="col-sm-4">
+                    <label for="passcode">Enter Your passcode</label>
+                    <input type="password" name="passcode" [(ngModel)]="passcode">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                    <div class="col-sm-8">
+                            <button (click)="onClickMe()">Login</button>
+                        </div>
+            </div>
+            <br>
+            <div class="jumbotron text-center">
+                {{messageText}}
+            </div>
+    </div>
+
+</body>
+
+</html>
