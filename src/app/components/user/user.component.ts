@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { emit } from 'cluster';
 
 @Component({
   selector: 'app-user',
